@@ -1,0 +1,154 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #282828;
+	font: 400 16px 'Lato', sans-serif;
+	color: #fff;
+}
+
+.block,
+.search-block {
+	display: flex;
+	justify-content: space-between;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.content {
+	max-width: 400px;
+	max-height: 750px;
+	background: linear-gradient(
+		135deg,
+		rgba(176, 244, 228, 0.7) 4%,
+		rgba(99, 101, 169, 0.7) 97%
+	);
+	text-align: center;
+	border-radius: 20px;
+	padding: 30px;
+}
+
+img {
+	max-width: 35px;
+	max-height: 35px;
+}
+
+.main-img {
+	max-width: 200px;
+	max-height: 200px;
+}
+
+input {
+	display: block;
+	padding: 17px 35px 17px 15px;
+	border: none;
+	font-size: 18px;
+	color: rgb(129, 123, 123);
+
+	outline: none;
+	border-radius: 35px;
+}
+
+.search-bth {
+	margin-left: 10px;
+	background-color: #fff;
+	border: none;
+	border-radius: 50%;
+	width: 55px;
+	height: 55px;
+	transition: 0.4s;
+	cursor: pointer;
+}
+
+.search-bth img {
+	width: 20px;
+	height: 20px;
+}
+
+.search-bth:hover {
+	background-color: #e7e7e7;
+}
+
+.text-temperature {
+	font-size: 70px;
+}
+
+.text-city {
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+.futures {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 10px 0 10px;
+	gap: 30px;
+}
+
+.block {
+	align-items: center;
+}
+
+.f-content {
+	margin-left: 10px;
+}
+
+.number {
+	text-align: left;
+	font-size: 25px;
+	margin-bottom: 8px;
+}
+
+.text {
+	white-space: nowrap;
+	text-align: left;
+	font-size: 16px;
+}
+
+.text-t {
+	white-space: wrap;
+	text-align: left;
+	font-size: 13px;
+}
+
+.weather {
+	width: 340px;
+	height: 470px;
+	display: none;
+	transition: height 0.5s ease;
+}
+
+.expanded {
+	height: 555px;
+}
+
+.error {
+	font-size: 20px;
+	color: rgb(255, 0, 0);
+	opacity: 0.8;
+	margin-top: 10px;
+	display: none;
+}
+
+.expand_more {
+	margin-top: 20px;
+	transition: 0.1s;
+	cursor: pointer;
+	font-size: 40px;
+}
+
+.expand_more:hover {
+	color: #e7e7e7;
+}
+
+.flipped {
+	transform: rotateX(180deg);
+}

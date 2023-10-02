@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather</title>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+			rel="stylesheet"
+		/>
+
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="content">
+				<div class="search-block">
+					<input type="text" placeholder="Введите город" id="input" />
+					<button class="search-bth" id="btn">
+						<img src="images/search.png" alt="" />
+					</button>
+				</div>
+				<div class="error">
+					<h2 class="text-error">Такого города не существует</h2>
+				</div>
+				<div class="weather">
+					<img src="images/clouds.png" alt="" class="main-img" />
+					<h1 class="text-temperature"><span id="temperature"></span>℃</h1>
+					<h2 class="text-city" id="text-city"></h2>
+					<div class="futures">
+						<div class="block">
+							<img src="images/humidity.png" alt="" />
+							<div class="f-content">
+								<h3 class="number"><span class="humidity">99</span>%</h3>
+								<h3 class="text">Влажность</h3>
+							</div>
+						</div>
+						<div class="block block-speed">
+							<img src="images/wind.png" alt="" />
+							<div class="f-content">
+								<h3 class="number">
+									<span class="speed_wind">0.78</span> km/h
+								</h3>
+								<h3 class="text">Скорость ветра</h3>
+							</div>
+						</div>
+					</div>
+					<div class="more">
+						<span class="material-icons-outlined expand_more">
+							expand_more
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
